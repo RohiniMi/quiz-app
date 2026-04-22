@@ -1,8 +1,11 @@
 import Question from "../models/questions.js"
 export const getQuestions = async (req, res, next) => {
     try {
-        console.log("get called");
+        console.log("before find");
+        
         const questions = await Question.find();
+        console.log("after find");
+        
         res.status(200).json(questions);
     } catch (error) {
         next(error)

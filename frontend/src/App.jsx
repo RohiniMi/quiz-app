@@ -7,7 +7,7 @@ export default function App() {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    axios.get("http://localhost:5500/question")
+    axios.get("https://quiz-app-fk9h.onrender.com/question")
       .then(res => setQuestions(res.data));
   }, []);
 
