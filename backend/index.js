@@ -16,4 +16,4 @@ app.use("/",questionRoutes);
 
 app.use(pathHandlerMiddleware);
 app.use(errorHandler);
-app.listen(process.env.PORT, () => console.log(`server is running at http://localhost:${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`server is running`));
